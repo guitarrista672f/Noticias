@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+            height:100%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            height:100%
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            height: 15%;
+            text-align: center;
+            padding: 1.5em;
+            
+        }
+        main{
+            background-color:rgb(198, 205, 230);
+            display:flex;
+        }
+
+        .card{
+            border:3px solid rgb(194, 205, 210);
+            background-color: rgb(234, 234, 241);
+            border-radius: 8px;
+            padding: 1.5em;
+            margin: 2em;;
+            justify-content:space-evenly;
+        }
+
+        .card:hover{
+            h3{
+                color:red;
+            }
+            .autor::after{
+                font-style: italic;
+                color:rgb(60, 122, 122);
+                content: "lorem explanation ...more information lorem explanation ...more information";
+            }
+            .autor{
+                transform: scale(1.2);
+                background-color: rgb(230, 214, 193);
+            }
+
+        }
+
+
+
+
+
+        .foto{
+            width:100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de noticias con Estilos</title>
+</head>
+<body>
+    <header>
+        <h1>Últimas Noticias</h1>
+    </header>
+    <main>
+        <div class="card">
+            <img class="foto" src="./noticia.jpg" alt="foto-noticia">
+            <h3>Noticia 1</h3>
+            <p>Descripción de la noticia 1.</p>
+            <p class="autor">Autor: G.Fernando Trevino <br></p>
+        </div>
+        <div class="card">
+            <img class="foto" src="./noticia.jpg" alt="foto-noticia">
+            <h3>Noticia 2</h3>
+            <p>Descripción de la noticia 2.</p>
+            <p class="autor">Autor: G.Fernando Trevino <br></p>
+        </div>
+
+        <div class="card">
+            <img class="foto" src="./noticia.jpg" alt="foto-noticia">
+            <h3>Noticia 3</h3>
+            <p>Descripción de la noticia 3.</p>
+            <p class="autor">Autor: G.Fernando Trevino <br></p>
+        </div>
+    </main>
+    
+</body>
+</html>
